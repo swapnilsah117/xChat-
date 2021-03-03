@@ -1,0 +1,56 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    background-color:yellow;
+    margin: 0;
+}
+.main-window{
+    display: flex;
+
+}
+.chat-main{
+    flex: 1;
+}
+.side-bar{
+    height: 90vh;
+    color: white;
+    background-color: blueviolet;
+    width: 225px;
+    
+}
+#message-container{
+    flex-direction: column;
+    flex-grow: 1;
+    height: 590px;
+    overflow-y: scroll;
+    background-color:white;
+    overflow-y: scroll;
+}
+
+#message{
+    margin: 15px;
+}
+
+.type{
+    margin-top: 16px;
+    padding: 24px;
+}
+
+#send-button{
+    cursor: pointer;
+    padding: 12px;
+    background: #7C5CBF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    outline: none;
+}
+
+#input-box{
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    outline: none;
+    width: 90%;
+}

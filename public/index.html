@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Window</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+     <!-- <input type="text" id = 'input-1' placeholder="Message">
+        <button id = "send">Send</button> -->
+    <!-- <h1>Chat app</h1>   -->
+
+    <div class = "main-window">
+        <div class="side-bar"></div>
+            <div class=chat-main>
+                <div id="message-container"></div>
+                    <div class="type">
+                        <form id = "chat-form">
+                            <input  id="input-box" name="input" type="text" placeholder="Message">
+                            <button id="send-button">Send</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>    
+        <script id="message-render" type="html/text">
+           
+            <div id="message">
+                <p>{{message}}</p>
+            </div>
+            <div  id="message" class="message-writer">
+                <p>Some User Name</p>
+            </div>
+        </script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/c.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+</body>
+</html>
